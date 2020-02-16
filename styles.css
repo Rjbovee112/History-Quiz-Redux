@@ -3,6 +3,11 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+#timerContainer {
+    position: relative;
+    border-radius: 5px;
+    border: red solid 2px;
+}
 
 body{
     padding: 0;
