@@ -7,7 +7,23 @@
     position: relative;
     border-radius: 5px;
     border: red solid 2px;
+    margin-right: 15px;
 }
+
+#quizs {
+    text-align: center;
+}
+
+#timer {
+    text-align: center;
+}
+
+#quize {
+    text-align: center;
+}
+
+
+
 
 body{
     padding: 0;
