@@ -1,0 +1,72 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body.correct {
+    color: blue;
+}
+
+body.wrong {
+    color: red;
+}
+
+.container {
+    max-width: 80%;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+   display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn:hover {
+    color: blue;
+}
+
+.start-btn{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin: 8px;
+}
+
+.next-btn{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin: 8px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hide {
+    display: none;
+}
