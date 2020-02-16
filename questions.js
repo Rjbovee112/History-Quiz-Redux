@@ -129,7 +129,7 @@ const questions = [
 function startTimer(duration, display) {
     var timer = duration, seconds;
     setInterval(function () {
-        seconds = parseInt(timer % 30, 10);
+        seconds = parseInt(timer % 10);
 
         seconds = seconds < 10 ? + seconds : seconds;
 
@@ -142,7 +142,9 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    var thirtySeconds = 30 * 5,
+    var thirtySeconds = 10 * 5,
         display = document.querySelector('#timer');
     startTimer(thirtySeconds, display);
 };
+
+//minus time for wrong answer//
