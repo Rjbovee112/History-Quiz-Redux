@@ -6,8 +6,10 @@
 #timerContainer {
     position: relative;
     border-radius: 5px;
-    border: red solid 2px;
     margin-right: 15px;
+    padding: 5px;
+    background-color: aqua;
+    box-shadow: 0 0 10px 2px;
 }
 
 #quizs {
