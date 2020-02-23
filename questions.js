@@ -10,6 +10,8 @@ startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     nextQuestion()
+
+
 })
 
 let shuffledQuestions, currentQuestionIndex
@@ -125,26 +127,30 @@ const questions = [
 ]
 
 //Timer//
-
-function startTimer(duration, display) {
+let thirtySeconds;
+$("#start-btn").on('click', function () {
+    thirtySeconds = thirtySeconds = 30 * 5;
+    startTimer(thirtySeconds);
+})
+function startTimer(duration) {
     var timer = duration, seconds;
     setInterval(function () {
-        seconds = parseInt(timer % 10);
+        let seconds = parseInt(timer % 30);
 
-        seconds = seconds < 10 ? + seconds : seconds;
+        seconds = seconds < 30 ? + seconds : seconds;
 
-        display.textContent = seconds;
+        $("#timer").text(seconds);
 
-        if (--timer < 0) {
+        if (--timer <= 0) {
             timer = duration;
         }
     }, 1000);
 }
 
-window.onload = function () {
-    var thirtySeconds = 10 * 5,
-        display = document.querySelector('#timer');
-    startTimer(thirtySeconds, display);
-};
 
-//minus time for wrong answer//
+// window.onload = function () {
+
+//         display = document.querySelector('#timer');
+//     startTimer(thirtySeconds, display);
+// };
+
